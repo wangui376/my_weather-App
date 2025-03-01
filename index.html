@@ -3,37 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>my_weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main>
-      <h1>Tokyo</h1>
-      <div>
-        <p>
-          Tuesday 14:49,scattered clouds
-          <br />
-          Humidity: 66%, Wind 3.13 km/h
-        </p>
-      </div>
-      <div>
-        <p>🌤️ 12&deg;</p>
-      </div>
-    </main>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input type="search" placeholder="Enter a city..." required />
+          <input type="submit" value="search" />
+        </form>
+      </header>
+      <main>
+        <h1>Tokyo</h1>
+        <div>
+          <p>
+            Tuesday 14:49,scattered clouds
+            <br />
+            Humidity: 66%, Wind 3.13 km/h
+          </p>
+        </div>
+        <div>
+          <p>🌤️ 12&deg;</p>
+        </div>
+      </main>
 
-    <footer>
-      This project was coded by
-      <a href="https://github.com/wangui376/my_weather-App">Esther Kariuki,</a>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/wangui376/my_weather-App"
+          >Esther Kariuki,</a
+        >
 
-      <a href="https://GitHub/my_weather-App"> open-sourced on GitHub</a> and
-      <a href="https://my-weather-shecodessapp.netlify.app/"
-        >hosted on Netlify</a
-      >
-    </footer>
+        <a href="https://GitHub/my_weather-App"> open-sourced on GitHub</a> and
+        <a href="https://my-weather-shecodessapp.netlify.app/"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
