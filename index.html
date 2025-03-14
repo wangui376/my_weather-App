@@ -15,25 +15,39 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="search" />
+        <form class="search-form"  id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+             id="search-form-input"
+            class="search-form-input"
+        
+          />
+          <input type="submit" value="search" class="search-form-button" />
         </form>
       </header>
+    </hr>
       <main>
-        <h1>Tokyo</h1>
-        <div>
-          <p>
-            Tuesday 14:49,scattered clouds
-            <br />
-            Humidity: 66%, Wind 3.13 km/h
-          </p>
-        </div>
-        <div>
-          <p>🌤️ 12&deg;</p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city"  id="city" >Tokyo</h1>
+            <p class="weather-app-details">
+              Tuesday 14:49,scattered clouds
+              <br />
+              Humidity: <strong>66%,</strong> Wind <strong>3.13 km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+           <div class="weather-app-icon">🌤️</div>
+           <div class="weather-app-value">12</div> 
+           <div class="weather-app-temperature">&degC</div>
+          </div>
         </div>
       </main>
+         
 
+      <script   src="src/index.js"> </script>
       <footer>
         This project was coded by
         <a href="https://github.com/wangui376/my_weather-App"
@@ -42,8 +56,7 @@
 
         <a href="https://GitHub/my_weather-App"> open-sourced on GitHub</a> and
         <a href="https://my-weather-shecodessapp.netlify.app/"
-          >hosted on Netlify</a
-        >
+          >hosted on Netlify</a>
       </footer>
     </div>
   </body>
